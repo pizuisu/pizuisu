@@ -7,6 +7,7 @@ services:
       CPU_CORES: "4"
       DISK_TYPE: "ide"
       ARGUMENTS: "-drive file=/driver.iso,media=cdrom"
+      AZURE_REGION: "westus"  # Thêm biến môi trường cố định region California
     devices:
       - /dev/kvm
     cap_add:
